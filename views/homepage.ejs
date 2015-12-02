@@ -3,6 +3,8 @@
 <% listOfDresses.forEach(function(dress) { %>
 <div>
   <h3><%= dress.id %> - <%= dress.name %></h3>
+  <h4><%= dress.season %></h4>
   <img src="/images/<%= dress.picture %>" width=200>
+
 </div>
 <% }) %>

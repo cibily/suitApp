@@ -15,6 +15,10 @@ module.exports = {
       picture: {
         type: 'string',
         required: true
+      },
+      season : {
+        type: 'string',
+        required: true
       }
   }
 };
