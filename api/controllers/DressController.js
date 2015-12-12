@@ -12,7 +12,7 @@ module.exports = {
 
       console.log("=======", listOfDresses.length, listOfDresses);
 
-      res.view('homepage', {
+      res.view('dress/today', {
         numOfDresses: listOfDresses.length,
         listOfDresses: listOfDresses
       });
