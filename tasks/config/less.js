@@ -20,7 +20,10 @@ module.exports = function(grunt) {
 				src: ['importer.less'],
 				dest: '.tmp/public/styles/',
 				ext: '.css'
-			}]
+			}],
+      options: {
+        paths: ['bower_components', 'node_modules']
+      }
 		}
 	});
 
