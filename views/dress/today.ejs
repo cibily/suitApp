@@ -8,16 +8,14 @@
 
 
 <div class="container">
+    <% listOfDresses.forEach(function(dress) { %>
     <div class="row">
         <div class="col-md-12">
-            <% listOfDresses.forEach(function(dress) { %>
-            <div>
-                <h3><%= dress.id %> - <%= dress.name %></h3>
-                <p><%= dress.season %></p>
-                <img src="/images/<%= dress.picture %>" width=200>
-            </div>
-            <% }) %>
+            <h3><%= dress.id %> - <%= dress.name %></h3>
+            <p><%= dress.season %></p>
+            <img src="/images/<%= dress.picture %>" width=200>
         </div>
     </div>
+    <% }) %>
 </div>
 
