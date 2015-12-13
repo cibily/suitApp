@@ -8,14 +8,22 @@
 
 
 <div class="container">
-    <% listOfDresses.forEach(function(dress) { %>
     <div class="row">
-        <div class="col-md-12">
-            <h3><%= dress.id %> - <%= dress.name %></h3>
-            <p><%= dress.season %></p>
-            <img src="/images/<%= dress.picture %>" width=200>
-        </div>
+        <% listOfDresses.forEach(function(dress, index) { %>
+
+            <% if (index > 0 && index % 3 === 0) { %>
+                </div>
+                <div class="row">
+            <% } %>
+
+            <div class="col-md-4">
+                <h3><%= dress.id %> - <%= dress.name %></h3>
+                <p><%= dress.season %></p>
+                <img src="/images/<%= dress.picture %>" width=200>
+            </div>
+
+        <% }) %>
     </div>
-    <% }) %>
+
 </div>
 
